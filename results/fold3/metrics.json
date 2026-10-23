@@ -1,0 +1,80 @@
+{
+  "val_loss": 0.9231911806426607,
+  "val_acc": 0.7333333333333333,
+  "macro_f1": 0.7465514311575896,
+  "report": {
+    "Safe driving": {
+      "precision": 0.9038461538461539,
+      "recall": 0.31864406779661014,
+      "f1-score": 0.47117794486215536,
+      "support": 295.0
+    },
+    "Texting - right hand": {
+      "precision": 0.9870689655172413,
+      "recall": 0.7658862876254181,
+      "f1-score": 0.8625235404896422,
+      "support": 299.0
+    },
+    "Phone call - right hand": {
+      "precision": 0.8543307086614174,
+      "recall": 0.7406143344709898,
+      "f1-score": 0.793418647166362,
+      "support": 293.0
+    },
+    "Texting - left hand": {
+      "precision": 0.933852140077821,
+      "recall": 0.8602150537634409,
+      "f1-score": 0.8955223880597015,
+      "support": 279.0
+    },
+    "Phone call - left hand": {
+      "precision": 0.8875,
+      "recall": 0.4797297297297297,
+      "f1-score": 0.6228070175438597,
+      "support": 296.0
+    },
+    "Operating the radio": {
+      "precision": 0.9846153846153847,
+      "recall": 0.9922480620155039,
+      "f1-score": 0.9884169884169884,
+      "support": 258.0
+    },
+    "Drinking": {
+      "precision": 0.8875968992248062,
+      "recall": 0.7815699658703071,
+      "f1-score": 0.8312159709618875,
+      "support": 293.0
+    },
+    "Reaching behind": {
+      "precision": 0.9402390438247012,
+      "recall": 1.0,
+      "f1-score": 0.9691991786447639,
+      "support": 236.0
+    },
+    "Hair / makeup": {
+      "precision": 0.3594009983361065,
+      "recall": 0.8404669260700389,
+      "f1-score": 0.5034965034965035,
+      "support": 257.0
+    },
+    "Talking to passenger": {
+      "precision": 0.44221105527638194,
+      "recall": 0.654275092936803,
+      "f1-score": 0.527736131934033,
+      "support": 269.0
+    },
+    "accuracy": 0.7333333333333333,
+    "macro avg": {
+      "precision": 0.8180661349380014,
+      "recall": 0.7433649520278842,
+      "f1-score": 0.7465514311575896,
+      "support": 2775.0
+    },
+    "weighted avg": {
+      "precision": 0.8225750581195571,
+      "recall": 0.7333333333333333,
+      "f1-score": 0.7431401113421833,
+      "support": 2775.0
+    }
+  }
+}
