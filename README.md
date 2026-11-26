@@ -1,5 +1,11 @@
 # Driver Distraction Detector
 
+**Live demo:** https://driver-distraction-detector-ml.streamlit.app  
+**Project report:** [PDF](report/Distracted_Driver_Detection_Report.pdf) · [Word](report/Distracted_Driver_Detection_Report.docx) · [Q&A summary](PROJECT_REPORT.md)
+
+> The free Streamlit Cloud app sleeps after a few days without visitors – if you see a "wake up" button, click it and
+> wait about a minute.
+
 Classifies a dashboard-camera frame into 10 driver behaviours (safe driving, texting L/R,
 phone call L/R, radio, drinking, reaching behind, hair/makeup, talking to passenger) using a
 fine-tuned ImageNet-pretrained CNN, with a Streamlit demo and a live webcam script.
