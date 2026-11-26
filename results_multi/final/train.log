@@ -1,0 +1,14 @@
+device=cuda | train sources=['sf', 'sfx', 'as', 'wild'] | sf: 13733 imgs (16 subjects/groups), 32% of each epoch, sfx: 1293 imgs (1 subjects/groups), 14% of each epoch, as: 41850 imgs (56 subjects/groups), 45% of each epoch, wild: 647 imgs (8 subjects/groups), 9% of each epoch
+C:\Users\Vineet\Desktop\Driver Detection\.venv\Lib\site-packages\torch\utils\data\sampler.py:264: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:219.)
+  weights_tensor = torch.as_tensor(weights, dtype=torch.double)
+epoch=1 | train_loss=1.4143 | train_acc_in_set=0.5509 | sec=119
+epoch=2 | train_loss=0.6307 | train_acc_in_set=0.9433 | sec=66
+epoch=3 | train_loss=0.5692 | train_acc_in_set=0.9678 | sec=66
+epoch=4 | train_loss=0.5446 | train_acc_in_set=0.9772 | sec=67
+epoch=5 | train_loss=0.5312 | train_acc_in_set=0.9833 | sec=66
+epoch=6 | train_loss=0.5188 | train_acc_in_set=0.9882 | sec=66
+epoch=7 | train_loss=0.5115 | train_acc_in_set=0.9910 | sec=66
+epoch=8 | train_loss=0.5115 | train_acc_in_set=0.9909 | sec=66
+| State Farm (unseen drivers) | 3729 | 95.1% | 96.0% | 96.8% | 8.5% | 88.1% | 0.872 |
+| Ain Shams (unseen drivers, other cars, IR) | 10500 | 93.6% | 97.2% | 97.5% | 5.4% | 93.3% | 0.932 |
+saved to results_multi\final/

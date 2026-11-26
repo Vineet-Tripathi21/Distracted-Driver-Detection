@@ -1,0 +1,15 @@
+device=cuda | train sources=['sf', 'sfx', 'as'] | sf: 13733 imgs (16 subjects/groups), 35% of each epoch, sfx: 1293 imgs (1 subjects/groups), 15% of each epoch, as: 41850 imgs (56 subjects/groups), 50% of each epoch
+C:\Users\Vineet\Desktop\Driver Detection\.venv\Lib\site-packages\torch\utils\data\sampler.py:264: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:219.)
+  weights_tensor = torch.as_tensor(weights, dtype=torch.double)
+epoch=1 | train_loss=1.4150 | train_acc_in_set=0.5721 | sec=104
+epoch=2 | train_loss=0.6079 | train_acc_in_set=0.9620 | sec=65
+epoch=3 | train_loss=0.5583 | train_acc_in_set=0.9789 | sec=66
+epoch=4 | train_loss=0.5368 | train_acc_in_set=0.9865 | sec=66
+epoch=5 | train_loss=0.5254 | train_acc_in_set=0.9902 | sec=67
+epoch=6 | train_loss=0.5161 | train_acc_in_set=0.9937 | sec=67
+epoch=7 | train_loss=0.5120 | train_acc_in_set=0.9949 | sec=68
+epoch=8 | train_loss=0.5098 | train_acc_in_set=0.9956 | sec=67
+| State Farm (unseen drivers) | 3729 | 95.0% | 96.4% | 96.7% | 5.2% | 90.3% | 0.892 |
+| Ain Shams (unseen drivers, other cars, IR) | 10500 | 92.9% | 98.0% | 98.3% | 4.6% | 92.4% | 0.922 |
+| Wild phone photos (new cars, buses, cameras) | 647 | 59.2% | 77.7% | 99.4% | 95.3% | n/a | n/a (coarse labels) |
+saved to results_multi\mirror/

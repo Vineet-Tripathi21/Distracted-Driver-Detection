@@ -5,3 +5,9 @@ __pycache__/
 *.pyc
 *.pt
 *.npz
+data_multi/
+# the trained demo model IS shared
+!results_multi/final/model.pt
+# watermarked stock photos: keep local only
+demo_samples/*_internet.jpg
+/prepare_multi.log

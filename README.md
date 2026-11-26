@@ -6,6 +6,37 @@ fine-tuned ImageNet-pretrained CNN, with a Streamlit demo and a live webcam scri
 
 Dataset: [State Farm Distracted Driver Detection](https://www.kaggle.com/c/state-farm-distracted-driver-detection) (Kaggle).
 
+## Current model: multi-dataset training (recommended)
+The demo model `results_multi/final/model.pt` (EfficientNet-B0) is trained on three datasets so it works
+beyond one car and one camera:
+* [State Farm Distracted Driver Detection](https://www.kaggle.com/c/state-farm-distracted-driver-detection) - 10 classes
+* [Ain Shams "Novel Driver Distractions Dataset with Low Lighting Support"](https://data.mendeley.com/datasets/ykmr99nrsg) - same 10 classes, 70 drivers, 5 cars, IR
+* Multi-Class Driver Behavior Image Dataset (Zenodo) - coarse labels, used with a partial-label loss
+
+Headline output = 4 groups (Safe / Texting / Phone call / Other distraction); the 10 detailed classes are
+shown underneath. Training also mirrors images *with* left/right label swap (right-hand-drive cars).
+
+Held-out results (unseen drivers), final model:
+
+| Test set | 4-group acc | Safe-vs-distracted | 10-class acc |
+|---|---|---|---|
+| State Farm | 95.1% | 96.0% | 88.1% |
+| Ain Shams (other cars, IR) | 93.6% | 97.2% | 93.3% |
+
+Full comparison incl. the old model and wild phone photos: `results_multi/REPORT.md`.
+
+```bash
+streamlit run demo_app.py        # demo: sample gallery / upload / webcam + Grad-CAM heat-map
+# re-train from scratch (datasets in ../data_ext, State Farm in data/)
+python prepare_multi.py          # builds data_multi/index.csv + resized image cache
+bash run_multi_experiments.sh    # trains mirror / wildA / wildB / final runs
+python summarize_multi.py        # writes results_multi/REPORT.md + comparison.png
+```
+Known limit: training cameras all look at the driver from the side, so frontal-camera photos give many false
+alarms (see the wild-photo rows in the report).
+
+The sections below describe the original State-Farm-only pipeline (`run_all.py`, `app.py`).
+
 ## Why this fixes the original notebook
 | Problem in the old notebook | Here |
 |---|---|
