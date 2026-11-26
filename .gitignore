@@ -11,3 +11,5 @@ data_multi/
 # watermarked stock photos: keep local only
 demo_samples/*_internet.jpg
 /prepare_multi.log
+logs/
+results_multi/*.log

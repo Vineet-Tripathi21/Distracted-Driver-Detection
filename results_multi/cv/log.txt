@@ -1,0 +1,34 @@
+[cv] 3-fold driver-wise CV | arch=efficientnet_b0 lr=0.0003 mirror_p=0.5
+== fold 0: val drivers 25 (18451 imgs)
+   epoch=1 | train_loss=1.5596 | val_loss=0.6910 | val_group_acc=0.8578 | val_fine_acc=0.7780 | val_macro_f1=0.7753 | sec=96
+   epoch=2 | train_loss=0.6290 | val_loss=0.4393 | val_group_acc=0.8962 | val_fine_acc=0.8860 | val_macro_f1=0.8841 | sec=62
+   epoch=3 | train_loss=0.5571 | val_loss=0.4534 | val_group_acc=0.8928 | val_fine_acc=0.8822 | val_macro_f1=0.8815 | sec=61
+   epoch=4 | train_loss=0.5349 | val_loss=0.4314 | val_group_acc=0.9040 | val_fine_acc=0.8870 | val_macro_f1=0.8873 | sec=73
+   epoch=5 | train_loss=0.5265 | val_loss=0.4098 | val_group_acc=0.9087 | val_fine_acc=0.8953 | val_macro_f1=0.8961 | sec=99
+== fold 1: val drivers 24 (19050 imgs)
+   epoch=1 | train_loss=1.5657 | val_loss=0.6162 | val_group_acc=0.8908 | val_fine_acc=0.8237 | val_macro_f1=0.8235 | sec=108
+   epoch=2 | train_loss=0.6319 | val_loss=0.3481 | val_group_acc=0.9360 | val_fine_acc=0.9157 | val_macro_f1=0.9167 | sec=77
+   epoch=3 | train_loss=0.5558 | val_loss=0.3096 | val_group_acc=0.9400 | val_fine_acc=0.9205 | val_macro_f1=0.9211 | sec=74
+   epoch=4 | train_loss=0.5372 | val_loss=0.3008 | val_group_acc=0.9497 | val_fine_acc=0.9283 | val_macro_f1=0.9289 | sec=76
+   epoch=5 | train_loss=0.5282 | val_loss=0.2973 | val_group_acc=0.9473 | val_fine_acc=0.9307 | val_macro_f1=0.9309 | sec=96
+== fold 2: val drivers 23 (18082 imgs)
+   epoch=1 | train_loss=1.5554 | val_loss=0.7467 | val_group_acc=0.8365 | val_fine_acc=0.7765 | val_macro_f1=0.7781 | sec=106
+   epoch=2 | train_loss=0.6412 | val_loss=0.4351 | val_group_acc=0.8962 | val_fine_acc=0.8825 | val_macro_f1=0.8818 | sec=76
+   epoch=3 | train_loss=0.5666 | val_loss=0.3772 | val_group_acc=0.9193 | val_fine_acc=0.9052 | val_macro_f1=0.9058 | sec=75
+   epoch=4 | train_loss=0.5397 | val_loss=0.3598 | val_group_acc=0.9235 | val_fine_acc=0.9127 | val_macro_f1=0.9129 | sec=76
+   epoch=5 | train_loss=0.5315 | val_loss=0.3742 | val_group_acc=0.9190 | val_fine_acc=0.9044 | val_macro_f1=0.9047 | sec=97
+{
+  "val_group_acc": {
+    "mean": 0.9250026744370428,
+    "std": 0.019975591763582087
+  },
+  "val_fine_acc": {
+    "mean": 0.910162812421866,
+    "std": 0.018364644274931483
+  },
+  "val_macro_f1": {
+    "mean": 0.9105668344301246,
+    "std": 0.018128750879812205
+  }
+}
+done

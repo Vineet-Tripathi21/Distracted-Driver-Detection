@@ -1,0 +1,37 @@
+[sweep] train 44768 imgs / 57 subjects | val 12108 imgs / 16 drivers
+== effb0_lr1e-4: arch=efficientnet_b0 lr=0.0001 mirror_p=0.5
+   epoch=1 | train_loss=2.0843 | val_loss=1.8116 | val_group_acc=0.5883 | val_fine_acc=0.4285 | val_macro_f1=0.4049 | sec=96
+   epoch=2 | train_loss=1.1458 | val_loss=0.8539 | val_group_acc=0.8330 | val_fine_acc=0.6970 | val_macro_f1=0.6963 | sec=59
+   epoch=3 | train_loss=0.8043 | val_loss=0.6914 | val_group_acc=0.8545 | val_fine_acc=0.7668 | val_macro_f1=0.7645 | sec=58
+   epoch=4 | train_loss=0.7175 | val_loss=0.6511 | val_group_acc=0.8614 | val_fine_acc=0.7770 | val_macro_f1=0.7746 | sec=67
+== effb0_lr3e-4: arch=efficientnet_b0 lr=0.0003 mirror_p=0.5
+   epoch=1 | train_loss=1.7389 | val_loss=0.9074 | val_group_acc=0.8123 | val_fine_acc=0.6947 | val_macro_f1=0.6914 | sec=82
+   epoch=2 | train_loss=0.7262 | val_loss=0.5211 | val_group_acc=0.9067 | val_fine_acc=0.8538 | val_macro_f1=0.8552 | sec=53
+   epoch=3 | train_loss=0.5977 | val_loss=0.4616 | val_group_acc=0.9147 | val_fine_acc=0.8798 | val_macro_f1=0.8803 | sec=52
+   epoch=4 | train_loss=0.5677 | val_loss=0.4475 | val_group_acc=0.9146 | val_fine_acc=0.8798 | val_macro_f1=0.8803 | sec=59
+== effb0_lr1e-3: arch=efficientnet_b0 lr=0.001 mirror_p=0.5
+   epoch=1 | train_loss=1.3840 | val_loss=0.7223 | val_group_acc=0.7990 | val_fine_acc=0.7508 | val_macro_f1=0.7488 | sec=76
+   epoch=2 | train_loss=0.6686 | val_loss=0.4309 | val_group_acc=0.9135 | val_fine_acc=0.8778 | val_macro_f1=0.8810 | sec=52
+   epoch=3 | train_loss=0.5684 | val_loss=0.3502 | val_group_acc=0.9303 | val_fine_acc=0.9080 | val_macro_f1=0.9099 | sec=51
+   epoch=4 | train_loss=0.5378 | val_loss=0.3318 | val_group_acc=0.9408 | val_fine_acc=0.9196 | val_macro_f1=0.9205 | sec=57
+== effb0_lr3e-4_nomirror: arch=efficientnet_b0 lr=0.0003 mirror_p=0.0
+   epoch=1 | train_loss=1.5970 | val_loss=0.6545 | val_group_acc=0.8327 | val_fine_acc=0.8093 | val_macro_f1=0.8105 | sec=71
+   epoch=2 | train_loss=0.6343 | val_loss=0.4122 | val_group_acc=0.9147 | val_fine_acc=0.8955 | val_macro_f1=0.8966 | sec=50
+   epoch=3 | train_loss=0.5662 | val_loss=0.4160 | val_group_acc=0.9165 | val_fine_acc=0.8965 | val_macro_f1=0.8980 | sec=50
+   epoch=4 | train_loss=0.5449 | val_loss=0.3797 | val_group_acc=0.9183 | val_fine_acc=0.8987 | val_macro_f1=0.8997 | sec=56
+== mobilenetv3_lr3e-4: arch=mobilenet_v3_large lr=0.0003 mirror_p=0.5
+   epoch=1 | train_loss=1.6525 | val_loss=1.2067 | val_group_acc=0.7808 | val_fine_acc=0.5700 | val_macro_f1=0.5413 | sec=68
+   epoch=2 | train_loss=0.7264 | val_loss=0.6674 | val_group_acc=0.8695 | val_fine_acc=0.8197 | val_macro_f1=0.8226 | sec=38
+   epoch=3 | train_loss=0.5894 | val_loss=0.5167 | val_group_acc=0.9062 | val_fine_acc=0.8732 | val_macro_f1=0.8744 | sec=37
+   epoch=4 | train_loss=0.5623 | val_loss=0.4772 | val_group_acc=0.9092 | val_fine_acc=0.8843 | val_macro_f1=0.8848 | sec=47
+== mobilenetv3_lr1e-3: arch=mobilenet_v3_large lr=0.001 mirror_p=0.5
+   epoch=1 | train_loss=1.3489 | val_loss=1.0152 | val_group_acc=0.7885 | val_fine_acc=0.6863 | val_macro_f1=0.6845 | sec=57
+   epoch=2 | train_loss=0.6406 | val_loss=0.5803 | val_group_acc=0.8918 | val_fine_acc=0.8505 | val_macro_f1=0.8537 | sec=47
+   epoch=3 | train_loss=0.5585 | val_loss=0.4274 | val_group_acc=0.9153 | val_fine_acc=0.8960 | val_macro_f1=0.8972 | sec=55
+   epoch=4 | train_loss=0.5300 | val_loss=0.4028 | val_group_acc=0.9158 | val_fine_acc=0.8965 | val_macro_f1=0.8977 | sec=58
+== resnet50_lr3e-4: arch=resnet50 lr=0.0003 mirror_p=0.5
+   epoch=1 | train_loss=1.3610 | val_loss=0.4970 | val_group_acc=0.8940 | val_fine_acc=0.8595 | val_macro_f1=0.8586 | sec=98
+   epoch=2 | train_loss=0.6218 | val_loss=0.3542 | val_group_acc=0.9257 | val_fine_acc=0.9107 | val_macro_f1=0.9092 | sec=70
+   epoch=3 | train_loss=0.5522 | val_loss=0.2912 | val_group_acc=0.9503 | val_fine_acc=0.9340 | val_macro_f1=0.9340 | sec=70
+   epoch=4 | train_loss=0.5275 | val_loss=0.2841 | val_group_acc=0.9516 | val_fine_acc=0.9372 | val_macro_f1=0.9372 | sec=80
+done

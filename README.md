@@ -63,7 +63,7 @@ Add `--skip_cv` or `--skip_final` to do only part of it.
 ## Step-by-step alternative
 ## Run it (Google Colab / Kaggle notebook with a free GPU)
 ```bash
-pip install -r requirements.txt
+pip install -r requirements-train.txt
 # download the competition data (needs a Kaggle account + accepting the rules), e.g.
 kaggle competitions download -c state-farm-distracted-driver-detection -f imgs.zip
 kaggle competitions download -c state-farm-distracted-driver-detection -f driver_imgs_list.csv.zip

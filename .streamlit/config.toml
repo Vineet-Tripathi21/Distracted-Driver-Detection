@@ -1,0 +1,10 @@
+[server]
+maxUploadSize = 10          # MB - photos only, limits abuse
+enableXsrfProtection = true
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+primaryColor = "#2563eb"
