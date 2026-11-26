@@ -1,0 +1,11 @@
+.venv/
+data/
+data_multi/
+runs/
+results/
+logs/
+testing_images/
+**/__pycache__/
+**/*.npz
+*.log
+.git/

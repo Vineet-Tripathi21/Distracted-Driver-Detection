@@ -1,0 +1,50 @@
+{
+ "08_ainshams.jpg": {
+  "dataset": "Ain Shams",
+  "label": 0,
+  "split": "test",
+  "dist": 1
+ },
+ "09_ainshams.jpg": {
+  "dataset": "Ain Shams",
+  "label": 1,
+  "split": "test",
+  "dist": 0
+ },
+ "10_ainshams.jpg": {
+  "dataset": "Ain Shams",
+  "label": 2,
+  "split": "test",
+  "dist": 0
+ },
+ "11_ainshams.jpg": {
+  "dataset": "Ain Shams",
+  "label": 6,
+  "split": "test",
+  "dist": 0
+ },
+ "12_statefarm.jpg": {
+  "dataset": "State Farm",
+  "label": 0,
+  "split": "test",
+  "dist": 0
+ },
+ "13_statefarm.jpg": {
+  "dataset": "State Farm",
+  "label": 2,
+  "split": "test",
+  "dist": 0
+ },
+ "14_statefarm.jpg": {
+  "dataset": "State Farm",
+  "label": 5,
+  "split": "test",
+  "dist": 0
+ },
+ "15_statefarm.jpg": {
+  "dataset": "State Farm",
+  "label": 7,
+  "split": "test",
+  "dist": 1
+ }
+}

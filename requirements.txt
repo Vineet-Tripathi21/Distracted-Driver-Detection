@@ -1,9 +1,11 @@
-torch>=2.2
-torchvision>=0.17
+# Runtime dependencies for the Streamlit demo (Streamlit Community Cloud / Docker).
+# CPU-only PyTorch wheels keep the install small; training uses requirements-train.txt.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
 numpy
 pandas
-scikit-learn
 matplotlib
 pillow
-opencv-python
-streamlit>=1.35
+scikit-learn
+streamlit==1.66.1

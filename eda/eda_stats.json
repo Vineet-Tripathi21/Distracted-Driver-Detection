@@ -1,0 +1,142 @@
+{
+  "splits": {
+    "as/test": {
+      "images": 10500,
+      "subjects": 14
+    },
+    "as/train": {
+      "images": 41850,
+      "subjects": 56
+    },
+    "sf/test": {
+      "images": 3729,
+      "subjects": 4
+    },
+    "sf/train": {
+      "images": 13733,
+      "subjects": 16
+    },
+    "sfx/train": {
+      "images": 1293,
+      "subjects": 1
+    },
+    "wild/test": {
+      "images": 647,
+      "subjects": 8
+    }
+  },
+  "sf_raw_rows": 34924,
+  "sf_unique_rows": 17462,
+  "class_counts_sf": [
+    1953,
+    1754,
+    1783,
+    1809,
+    1817,
+    1804,
+    1811,
+    1532,
+    1518,
+    1681
+  ],
+  "imbalance_ratio_sf": 1.29,
+  "class_counts_as": [
+    5250,
+    5250,
+    5250,
+    5250,
+    5175,
+    5250,
+    5250,
+    5250,
+    5250,
+    5175
+  ],
+  "imbalance_ratio_as": 1.01,
+  "mc_counts": {
+    "Other": {
+      "sfx": 188,
+      "wild": 212
+    },
+    "Safe": {
+      "sfx": 323,
+      "wild": 148
+    },
+    "Phone call": {
+      "sfx": 264,
+      "wild": 79
+    },
+    "Texting": {
+      "sfx": 265,
+      "wild": 56
+    },
+    "Turning": {
+      "sfx": 253,
+      "wild": 152
+    }
+  },
+  "imgs_per_driver_sf": {
+    "min": 346,
+    "median": 829,
+    "max": 1237
+  },
+  "imgs_per_driver_as": {
+    "min": 675,
+    "median": 750,
+    "max": 750
+  },
+  "resolutions": {
+    "sf": {
+      "320x240": 300
+    },
+    "as": {
+      "1280x720": 300
+    },
+    "sfx": {
+      "640x480": 300
+    },
+    "wild": {
+      "3072x4096": 89,
+      "683x384": 84,
+      "2460x3280": 64
+    }
+  },
+  "pixel_stats": {
+    "as": {
+      "brightness_mean": 0.286,
+      "dark_share(<0.15)": 0.135,
+      "saturation_mean": 0.451,
+      "rgb_mean": [
+        0.327,
+        0.251,
+        0.279
+      ]
+    },
+    "sf": {
+      "brightness_mean": 0.352,
+      "dark_share(<0.15)": 0.0,
+      "saturation_mean": 0.306,
+      "rgb_mean": [
+        0.31,
+        0.377,
+        0.369
+      ]
+    },
+    "wild": {
+      "brightness_mean": 0.482,
+      "dark_share(<0.15)": 0.0,
+      "saturation_mean": 0.257,
+      "rgb_mean": [
+        0.51,
+        0.478,
+        0.459
+      ]
+    }
+  },
+  "group_share": {
+    "Safe driving": 0.103,
+    "Texting": 0.201,
+    "Phone call": 0.201,
+    "Other distraction": 0.494
+  }
+}

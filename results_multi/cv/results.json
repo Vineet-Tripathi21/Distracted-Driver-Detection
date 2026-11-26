@@ -1,0 +1,38 @@
+{
+  "fold0": {
+    "fold": 0,
+    "val_drivers": 25,
+    "val_images": 18451,
+    "epoch": 5,
+    "train_loss": 0.5264699362119039,
+    "val_loss": 0.40977226723310367,
+    "val_group_acc": 0.9087312340794537,
+    "val_fine_acc": 0.8953444257763807,
+    "val_macro_f1": 0.8961072705969402,
+    "sec": 99
+  },
+  "fold1": {
+    "fold": 1,
+    "val_drivers": 24,
+    "val_images": 19050,
+    "epoch": 5,
+    "train_loss": 0.528199362119039,
+    "val_loss": 0.2972648557277489,
+    "val_group_acc": 0.9472965879265092,
+    "val_fine_acc": 0.9307086614173228,
+    "val_macro_f1": 0.9309054823837866,
+    "sec": 96
+  },
+  "fold2": {
+    "fold": 2,
+    "val_drivers": 23,
+    "val_images": 18082,
+    "epoch": 5,
+    "train_loss": 0.531537454366684,
+    "val_loss": 0.37416537936223504,
+    "val_group_acc": 0.9189802013051653,
+    "val_fine_acc": 0.9044353500718947,
+    "val_macro_f1": 0.9046877503096471,
+    "sec": 97
+  }
+}
